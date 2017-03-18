@@ -664,11 +664,11 @@ public class scanner implements java_cup.runtime.Scanner {
             }
           case 31: break;
           case 10: 
-            { return new Symbol(sym.MAYORQUE, yyline, yycolumn, null);
+            { return new Symbol(sym.MAYOR, yyline, yycolumn, null);
             }
           case 32: break;
           case 11: 
-            { return new Symbol(sym.MENORQUE, yyline, yycolumn, null);
+            { return new Symbol(sym.MENOR, yyline, yycolumn, null);
             }
           case 33: break;
           case 12: 
@@ -688,7 +688,7 @@ public class scanner implements java_cup.runtime.Scanner {
             }
           case 37: break;
           case 16: 
-            { return new Symbol(sym.IGUALIGUAL, yyline, yycolumn, null);
+            { return new Symbol(sym.IGUAL, yyline, yycolumn, null);
             }
           case 38: break;
           case 17: 
@@ -696,11 +696,11 @@ public class scanner implements java_cup.runtime.Scanner {
             }
           case 39: break;
           case 18: 
-            { return new Symbol(sym.MAYORIGUAL, yyline, yycolumn, null);
+            { return new Symbol(sym.MAYOR_IGUAL, yyline, yycolumn, null);
             }
           case 40: break;
           case 19: 
-            { return new Symbol(sym.MENORIGUAL, yyline, yycolumn, null);
+            { return new Symbol(sym.MENOR_IGUAL, yyline, yycolumn, null);
             }
           case 41: break;
           case 20: 

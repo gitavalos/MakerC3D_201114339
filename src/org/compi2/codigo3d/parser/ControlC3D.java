@@ -7,15 +7,20 @@ package org.compi2.codigo3d.parser;
 public class ControlC3D {
     
     private static int temp = 0;
+    private static int etq = 0;
     private static String c3d = "";
+    public static String etqv="";
+    public static String etqf="";
+
     
     /**
      * Reinicia las variables estáticas relacionadas con la generación del
      * código de tres direcciones.
      */
     public static void reiniciar(){
+        etq = 0;
         temp = 0;
-        c3d = "";       
+        c3d = "";
     }
     
     /**
@@ -23,9 +28,13 @@ public class ControlC3D {
      * @return El siguiente temporal (t$#)
      */
     public static String generaTemp(){
-        return "t$"+temp++; 
+        return "t$"+temp++;
     }
-    
+   
+     public static String generaEtq(){
+        return "L"+etq++;
+    }
+   
     
     /**
      * Agrega la sentencia que recibe como parámetro a la cadena de código
@@ -33,7 +42,7 @@ public class ControlC3D {
      * @param sentencia Código 3D a agregar
      */
     public static void agregarC3D(String sentencia){
-        c3d += sentencia + "; \n";
+        c3d += sentencia;
     }
     
     /**
@@ -43,7 +52,5 @@ public class ControlC3D {
     public static String getC3D(){
         return c3d;
     }
-    
-
     
 }
